@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Forms</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/sign-up-validation.js" defer></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="sidebar">
+
+        </div>
+        <div class="main-content">
+            <div class="landing-message">
+                <p class="header-text">
+                    This is not a real online service! You know you need something like this
+                    in your life to help you realize your deepest dreams. Sign up <span class="impact-text">now</span>
+                    to get started.
+
+                </p>
+                <p>
+                    You <span class="impact-text">know</span> you want to.
+                </p>
+            </div>
+            <div class="form">
+                <form >
+                    <div class="col-one">
+                        <p>
+                            <label for="first-name">
+                                <span>First Name:<span aria-label="required">*</span> </span>
+                            </label>
+                            <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                            <span></span>
+                        </p>
+                        <p>
+                            <label for="email">
+                                <span>
+                                    Email:<span aria-label="required">*</span>
+                                </span>
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="js1000@gmail.com" required>
+                            <span></span>
+                        </p>
+                        <p>
+                            <label for="password">
+                                <span>Password:<span aria-label="required">*</span>
+                            </span>
+                            </label>
+                            <input type="password" name="password" id="password" min="8" max="20" required>
+                            <span class="password-length"></span>
+                        </p>
+                    </div>
+                    <div class="col-two">
+                        <p>
+                            <label for="last-name">
+                                <span>Last Name:<span aria-label="required">*</span></span>
+                            </label>
+                            <input type="text" name="last-name" placeholder="Stubert" id="last-name" required>
+                            <span></span>
+
+                        </p>
+                        <p>
+                            <label for="phone-number">
+                                <span>Phone Number:<span aria-label="required">*</span></span>
+                            </label>
+                            <input type="tel" name="phone-number" placeholder="420-321-3213" id="phone-number" required>
+                            <span></span>
+
+                        </p>
+                        <p>
+                            <label for="confirm-password">
+                                <span>Confirm Password:<span aria-label="required">*</span></span>
+                            </label>
+                            <input type="password" name="confirm-password" id="confirm-password" min="8" max="20"  required>
+                            <span class="password-length"></span>
+                        </p>
+                    </div>
+
+
+                </form>
+
+            </div>
+            <div class="login-section">
+                <button type="submit">Create account</button>
+                <span>
+                    Already have an account? <a href="http://" id="login-link">Log in</a>
+                </span>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
